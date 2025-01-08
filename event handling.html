@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <title>Event handling</title>
+    </head>
+    <body>
+        <h1 id="h">welcome to javascript</h1>
+        <p>JavaScript is a programming language used to create dynamic content for websites. 
+            It is a lightweight, cross-platform, and single-threaded programming language. 
+            JavaScript is an interpreted Language that executes code line by line 
+            providing more flexibility.</p>
+            <hr>
+            change your webpage background to:
+            <button onclick="changeback('lightblue')" style="background-color: lightblue;">blue</button>
+            <button onclick="changeback('lightgreen')" style="background-color: lightgreen;">green</button>
+            <button onclick="changeback('lightpink')" style="background-color: lightpink;">pink</button>
+            <br>
+            change your heading baackground to:
+            <button onclick="changehead('red')" style="background-color: red;">red</button>
+            <button onclick="changehead('blue')" style="background-color: blue;">blue</button>
+            <button onclick="changehead('green')" style="background-color: green;">green</button>
+            <script>
+                function changeback(color){
+                    document.body.style.background=color;
+                }
+                function changehead(color){
+                    var c=document.getElementById("h");
+                    c.style.background=color;
+                }
+            </script>
+    </body>
+</html>
